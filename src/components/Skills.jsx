@@ -1,14 +1,14 @@
 import React from "react";
-
-function skills() {
-  const skills = [
-    "HTML",
-    "CSS",
-    "Tailwind CSS",
-    "Bootstrap",
-    "Javascript",
-    "React",
-  ];
+//const export method
+const skills = [
+  "HTML",
+  "CSS",
+  "Tailwind CSS",
+  "Bootstrap",
+  "Javascript",
+  "React",
+];
+export function Skills() {
   const skillsList = skills.map((skill, index) => (
     <p
       key={index}
@@ -27,4 +27,4 @@ function skills() {
   );
 }
 
-export default skills;
+// export function Skills;
