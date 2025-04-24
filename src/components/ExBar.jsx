@@ -19,7 +19,7 @@ function ExBar() {
           Freelancer: April 2023 - March 2024
         </p>
         progress bar .......................
-        <p className="text-gray-400 text-xs mt-1">Ongoing journey...</p>
+        <p className="text-gray-400 text-xs mt-1">Completed journey</p>
       </div>
     </div>
   );
