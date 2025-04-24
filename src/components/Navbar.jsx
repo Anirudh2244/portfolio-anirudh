@@ -3,12 +3,12 @@ import { Linkedin, Github, Moon } from "lucide-react";
 
 function Navbar() {
   return (
-    <div className="flex justify-between items-center text-white py-2 text-2xl">
+    <div className="flex justify-between items-center text-white py-2 text-2xl h-14">
       <div className="flex items-center font-semibold">
         <span className="text-red-400 mr-2">
           (<span className="text-sky-500">&lt;/&gt;</span>)
         </span>
-        Web Developer
+        <span className="hidden sm:block">Web Developer</span>
       </div>
 
       <div className="flex items-center gap-4">
