@@ -1,7 +1,7 @@
 import React from "react";
 
 function ProgressBar(props) {
-  console.log(props);
+  // console.log(props);
   return (
     <div className="bg-gray-500 w-full h-2 rounded-full relative overflow-hidden">
       <div

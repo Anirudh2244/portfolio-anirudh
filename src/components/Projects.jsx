@@ -7,8 +7,33 @@ import {
   SquareTerminal,
   X,
 } from "lucide-react";
+import Websites from "./Websites";
 
 function Projects() {
+  const projects = [
+    {
+      title: "Credit Card",
+      about: "Credit card is a responsive website for money lending websites.",
+      techStack: "HTML5, CSS3, JavaScript, Bootstrap, SASS, Slick, Git",
+      webUrl: "https://creditcard2244.netlify.app/",
+      githubUrl: "https://github.com/Anirudh2244/Credit-card",
+    },
+    {
+      title: "Healthcare",
+      about: "Responsive landing page for a healthcare provider.",
+      techStack: "HTML5, CSS3, Git",
+      webUrl: "https://healthcare2244.netlify.app/",
+      githubUrl: "https://github.com/Anirudh2244/Health-care-landing-page",
+    },
+    {
+      title: "Login Page",
+      about: "An appealing web login page for an educational institute.",
+      techStack: "HTML5, CSS3, Git",
+      webUrl: "https://loginpage2244.netlify.app/",
+      githubUrl: "https://github.com/Anirudh2244/Login-Page",
+    },
+  ];
+
   return (
     <div className="text-white bg-gray-900 p-5 rounded-md">
       <h1 className="text-2xl">~/Projects</h1>
@@ -21,7 +46,7 @@ function Projects() {
               <span>Windows PowerShell</span>
               <X size={15} />
             </div>
-            <div className="flex items-center mt-2">
+            <div className="sm:flex items-center mt-2 hidden ">
               <div className="hover:bg-zinc-700 p-2 rounded-tl-md rounded-bl-md">
                 <Plus size={15} />
               </div>
@@ -33,10 +58,10 @@ function Projects() {
           </div>
 
           <div className="flex justify-center items-center">
-            <div className="p-4 hover:bg-zinc-700">
+            <div className="p-4 hover:bg-zinc-700 hidden sm:block">
               <Minus size={15} />
             </div>
-            <div className="p-4 hover:bg-zinc-700">
+            <div className="p-4 hover:bg-zinc-700 hidden sm:block">
               <Square size={15} />
             </div>
             <div className="p-4 hover:bg-red-700 rounded-tr-md">
@@ -45,7 +70,11 @@ function Projects() {
           </div>
         </div>
 
-        <div className="bg-zinc-950 rounded-b-md">Project section</div>
+        <div className="bg-zinc-950 rounded-b-md">
+          {projects.map((project, index) => (
+            <Websites key={index} title={project.title} about={project.about} tech={project.techStack} github={project.githubUrl} website={project.webUrl}/>
+          ))}
+        </div>
       </div>
     </div>
   );
