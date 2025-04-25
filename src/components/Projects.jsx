@@ -22,11 +22,11 @@ function Projects() {
               <X size={15} />
             </div>
             <div className="flex items-center">
-              <div className="hover:bg-gray-600 p-2 rounded-tl-md rounded-bl-md">
+              <div className="hover:bg-zinc-700 p-2 rounded-tl-md rounded-bl-md">
                 <Plus size={15} />
               </div>
               |
-              <div className="hover:bg-gray-600 p-2 rounded-tr-md rounded-br-md">
+              <div className="hover:bg-zinc-700 p-2 rounded-tr-md rounded-br-md">
                 <ChevronDown size={15} />
               </div>
             </div>
