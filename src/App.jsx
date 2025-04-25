@@ -2,8 +2,8 @@ import { useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
-import Projects from "./components/projects";
-import { Skills } from "./components/skills";
+import Projects from "./components/Projects";
+import { Skills } from "./components/Skills";
 
 function App() {
   const [count, setCount] = useState(0);
