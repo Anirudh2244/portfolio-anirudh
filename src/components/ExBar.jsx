@@ -1,4 +1,5 @@
 import React from "react";
+import ProgressBar from "./ProgressBar";
 
 function ExBar() {
   return (
@@ -10,7 +11,7 @@ function ExBar() {
         <p className="text-white text-sm">
           Working since: March 2024 - Present
         </p>
-        progress bar .......................
+        <ProgressBar color="lime" progress="90" />
         <p className="text-gray-400 text-xs mt-1">Ongoing journey...</p>
       </div>
 
@@ -18,7 +19,7 @@ function ExBar() {
         <p className="text-white text-sm">
           Freelancer: April 2023 - March 2024
         </p>
-        progress bar .......................
+        <ProgressBar color="orange" progress="100" />
         <p className="text-gray-400 text-xs mt-1">Completed journey</p>
       </div>
     </div>

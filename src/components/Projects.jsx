@@ -21,7 +21,7 @@ function Projects() {
               <span>Windows PowerShell</span>
               <X size={15} />
             </div>
-            <div className="flex items-center">
+            <div className="flex items-center mt-2">
               <div className="hover:bg-zinc-700 p-2 rounded-tl-md rounded-bl-md">
                 <Plus size={15} />
               </div>
