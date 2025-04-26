@@ -35,33 +35,33 @@ function Projects() {
   ];
 
   return (
-    <div className="text-white bg-gray-900 p-5 rounded-md">
+    <div className="text-gray-600 bg-stone-200 dark:text-white dark:bg-gray-900 p-5 rounded-md">
       <h1 className="text-2xl">~/Projects</h1>
 
       <div>
-        <div className="bg-zinc-800 flex justify-between align-center mt-5 rounded-t-md">
+        <div className="bg-amber-100 dark:bg-zinc-800 flex justify-between align-center mt-5 rounded-t-md">
           <div className="flex items-center gap-4">
-            <div className="bg-zinc-950 flex justify-center items-center mt-2 ms-4 text-sm gap-2 p-2 rounded-t-md">
+            <div className="bg-amber-200 dark:bg-zinc-950 flex justify-center items-center mt-2 ms-4 text-sm gap-2 p-2 rounded-t-md">
               <SquareTerminal size={25} />
               <span>Windows PowerShell</span>
               <X size={15} />
             </div>
             <div className="sm:flex items-center mt-2 hidden ">
-              <div className="hover:bg-zinc-700 p-2 rounded-tl-md rounded-bl-md">
+              <div className="hover:bg-amber-200 dark:hover:bg-zinc-700 p-2 rounded-tl-md rounded-bl-md">
                 <Plus size={15} />
               </div>
               |
-              <div className="hover:bg-zinc-700 p-2 rounded-tr-md rounded-br-md">
+              <div className="hover:bg-amber-200 dark:hover:bg-zinc-700 p-2 rounded-tr-md rounded-br-md">
                 <ChevronDown size={15} />
               </div>
             </div>
           </div>
 
           <div className="flex justify-center items-center">
-            <div className="p-4 hover:bg-zinc-700 hidden sm:block">
+            <div className="p-4 hover:bg-amber-200 dark:hover:bg-zinc-700 hidden sm:block">
               <Minus size={15} />
             </div>
-            <div className="p-4 hover:bg-zinc-700 hidden sm:block">
+            <div className="p-4 hover:bg-amber-200 dark:hover:bg-zinc-700 hidden sm:block">
               <Square size={15} />
             </div>
             <div className="p-4 hover:bg-red-700 rounded-tr-md">
@@ -70,9 +70,16 @@ function Projects() {
           </div>
         </div>
 
-        <div className="bg-zinc-950 rounded-b-md">
+        <div className="bg-red-50 dark:bg-zinc-950 rounded-b-md">
           {projects.map((project, index) => (
-            <Websites key={index} title={project.title} about={project.about} tech={project.techStack} github={project.githubUrl} website={project.webUrl}/>
+            <Websites
+              key={index}
+              title={project.title}
+              about={project.about}
+              tech={project.techStack}
+              github={project.githubUrl}
+              website={project.webUrl}
+            />
           ))}
         </div>
       </div>

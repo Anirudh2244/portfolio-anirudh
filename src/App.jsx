@@ -9,7 +9,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="px-5 bg-zinc-950 min-h-screen">
+    <div className="px-5 bg-red-50 dark:bg-zinc-950 min-h-screen pb-10">
       <Navbar />
       <HeroSection />
       <Skills />

@@ -19,7 +19,7 @@ export function Skills() {
   ));
   return (
     <div className="flex flex-col items-center justify-center mt-7">
-      <h2 className="text-white text-3xl">What I do?</h2>
+      <h2 className="text-gray-600 dark:text-white text-3xl">What I do?</h2>
       <div className="flex items-center justify-center my-5 flex-wrap mb-7">
         {skillsList}
       </div>
