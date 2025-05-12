@@ -12,6 +12,13 @@ import Websites from "./Websites";
 function Projects() {
   const projects = [
     {
+      title: "Candid Dreams",
+      about: "Developed a responsive portfolio website for an Indian wedding photographer, highlighting visual storytelling through elegant UI/UX",
+      techStack: "React, Tailwind CSS, JavaScript, Git",
+      webUrl: "https://candiddreams.netlify.app/",
+      githubUrl: "https://github.com/Anirudh2244/Candid-Dreams",
+    },
+    {
       title: "Credit Card",
       about: "Credit card is a responsive website for money lending websites.",
       techStack: "HTML5, CSS3, JavaScript, Bootstrap, SASS, Slick, Git",
