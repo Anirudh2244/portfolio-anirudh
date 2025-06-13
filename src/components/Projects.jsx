@@ -15,7 +15,7 @@ function Projects() {
       title: "Candid Dreams",
       about: "Developed a responsive portfolio website for an Indian wedding photographer, highlighting visual storytelling through elegant UI/UX",
       techStack: "React, Tailwind CSS, JavaScript, Git",
-      webUrl: "https://candiddreams.netlify.app/",
+      webUrl: "https://thecandiddreams.com/",
       githubUrl: "https://github.com/Anirudh2244/Candid-Dreams",
     },
     {
